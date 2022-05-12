@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0; padding: 0; box-sizing: border-box; font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background: linear-gradient(to right, #68ddfa 0%,  #55c0db 0%, #e43df3 100%);
+}
+
+/* ----------- show data page ------------ */
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+h1{
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+table{
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+}
+th,td{
+    border: 1px solid #dfdede;
+    padding: 8px 30px;
+    text-align: center;
+    color: grey;
+}
+th{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+td{ font-size: 13px; }
+.email-style{
+    font-size: 14px;
+    color: grey;
+    display: inline-block;
+    background: #f2f2f2;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    line-height: 30px;
+    padding: 0 14px;
+}
+.post-class{
+    text-transform: uppercase;
+}
+.fa{ font-size: 18px; }
+.fa-edit{ color: #63c76a;}
+.fa-trash{ color: #ff0000;}
+
+
+.btnPage, .btnMainpage{
+    border: none;
+    border-radius: 1.5rem;
+    background: #f8f9fa;
+    cursor: pointer;
+}
+.pagination .btnPage:hover:not(.active) {   
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+}  
+
+.main-page .btnMainpage:hover:not(.active) {   
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+}  
+/* ----------- insert data page ------------ */
+.register a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.register{
+    min-width: 100%;
+    height: 100%;
+    padding: 3%;
+}
+.register-left{
+    max-width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.register-left a{
+    text-decoration: none;
+    border: none;
+    border-radius: 2.5rem;
+    padding: 2%;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin: auto;
+    cursor: pointer;
+}
+.register-right{
+    max-width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.register-left img{
+    width: 100%; 
+    size: 100px;
+    margin-top: 4%;
+    -webkit-animation: mover 2s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+.register-right{
+    padding: 0;
+    background: #f8f9fa;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .03);
+}
+/* .register-right .form-group{
+    margin: 10px 0;
+} */
+@-webkit-keyframes mover{
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-20px);}
+}
+@keyframes mover{
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-20px);}
+}
+.register-left p{
+    font-weight: lighter;
+    padding: 3%;
+}
+.register .register-form{
+    min-width: 100%;
+    padding: 5% 10%;
+    margin-top: 5%;
+}
+.btnRegister{
+    float: right;
+    margin-top: 5%;
+    border: none;
+    border-radius: 2.5rem;
+    padding: 3%;
+    width: 60%;
+    background: #0062cc;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 40%;
+    cursor: pointer;
+}
+
+.register .nav-tabs .nav-link:hover{
+    border: none;
+}
+.register .nav-tabs .nav-link.active{
+    width: 100px;
+    color: #0062cc;
+    border: 2px solid #0062cc;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.register-heading{
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 5%;
+    color: #495057;
+}
+::placeholder{
+    font-size: 14px;
+}
+
+.form-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+.form-group label{
+    flex-basis: 28%;
+}
+.form-group input{
+    flex-basis: 68%;
+    /* font-size: 16px; */
+}
+.form-group span{
+    font-size: 14px;
+    color: red;
+}
+
+.form-group span i{
+    color: rgb(25, 184, 94);
+}
+
+.register-left img{
+    width: 100%; 
+    size: 100px;
+    margin-top: 4%;
+    -webkit-animation: mover 2s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
