@@ -10,8 +10,7 @@
     <style>
         p{
             font-size: 1.2rem; 
-        }
-        
+        }        
         .btnApply{
             float: right;
             width: 40%;
@@ -23,8 +22,7 @@
             background: #f8f9fa;
             color: #383d41;
             font-size: 1.1rem;
-            font-weight: 600;
-            
+            font-weight: 600;            
             cursor: pointer;
         }
 
@@ -35,7 +33,7 @@
 </head>
 <body>
     <div class="jumbotron-small text-center text-white" >
-        <h1 class="mt-3">Job Application Portal</h1>
+        <h1 class="mt-3" style="color: #fff; font-size: 3rem; font-weight: bolder; letter-spacing: 0.05rem;">Job Application Portal</h1>
     </div>
     <div class="container application">
         <div class="row">

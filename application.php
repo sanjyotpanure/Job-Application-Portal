@@ -132,12 +132,17 @@
                                             <option>JavaScript</option>
                                             <option>C</option>
                                             <option>C++</option>
+                                            <option>C#</option>
                                             <option>SQL</option>
                                             <option>MySQl</option>
                                             <option>MongoDB</option>
                                             <option>PHP</option>
+                                            <option>Ruby</option>
+                                            <option>.NET</option>
+                                            <option></option>
                                             <option>React JS</option>
                                             <option>Angular JS</option>
+                                            <option>Vue JS</option>
                                             <option>Flutter</option>
                                             <option>React Native</option>
                                             <option>Kotlin</option>

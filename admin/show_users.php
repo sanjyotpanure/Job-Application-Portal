@@ -7,7 +7,7 @@
         $page = 1;
     }
 
-    $records_per_page = 3;
+    $records_per_page = 4;
     $start_from = ($page-1)*$records_per_page;
 
     $pquery = " select * from user_info limit $start_from, $records_per_page ";
@@ -21,40 +21,35 @@
     <?php include 'header.php' ?>
     <?php include '../links.php' ?>
     <style>
-        td{ font-size: 1.2rem; }
-        th{
-            font-weight: 900;
-        }
-        .nav-buttons{
+        .page-buttons{
             position: relative;
             display: flex;
             flex-direction: row;
+            justify-content: center;
             align-items: center;
-            margin-top: 5%;
+            margin-top: 3%;
             margin-bottom: 2%;
             width: 100%;
         }
-        .nav-buttons a{
+        .page-buttons a{
             font-weight: bold;
             color: #383d41;
             padding: 8px 16px;
             text-decoration: none; 
+            
         }
         .main-page{
             position: absolute;  
             margin-left: 0;          
         }
-        .pagination {
-            position: absolute;
-            justify-content: center;
-        } 
+        
     </style>
 </head>
 <body>
     <div class="container" style="margin-top:30px">
         <div class="card">
             <div class="card-header text-center">
-                <h4 style="font-weight: bold; font-size:1.8rem; letter-spacing: 0.1rem;">Registered Users List</h4>
+                <h4>Registered Users List</h4>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -92,7 +87,7 @@
                 </div>
             </div>
         </div>
-        <div class="nav-buttons">
+        <div class="page-buttons">
             <div class="pagination">
                 <?php
                     $pr_query = " select * from user_info ";

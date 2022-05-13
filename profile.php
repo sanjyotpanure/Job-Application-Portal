@@ -4,10 +4,17 @@
 
 include 'admin/dbcon.php';
 include('header.php');
-
 ?>
-
-
+<style>
+	.card .card-header{
+		align-items: center;
+		justify-content: center;
+		font-weight: bold; 
+		font-size:1.5rem;
+		padding: 8px auto;
+		color:#495057;
+	}
+</style>
 <div class="container" style="margin-top:30px">
   <div class="card">
     <form method="post" action="" enctype="multipart/form-data">
@@ -54,7 +61,7 @@ include('header.php');
             ?>
 		<div class="card-header">
 			<div class="row">
-				<div class="col-md-9">Profile</div>
+				<div class="col-md-9">My Profile</div>
 				<div class="col-md-3" align="right">
 				</div>
 			</div>

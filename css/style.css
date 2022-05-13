@@ -7,19 +7,23 @@ body{
     background: linear-gradient(to right, #68ddfa 0%,  #55c0db 0%, #e43df3 100%);
 }
 
-/* ----------- show data page ------------ */
 a{
     text-decoration: none;
     display: flex;
     justify-content: center;
     text-align: center;
 }
-h1{
-    font-size: 18px;
-    color: #000;
-    text-align: center;
-    margin-bottom: 10px;
+
+.card .card-header{
+    align-items: center;
+    justify-content: center;
+    font-weight: bold; 
+    font-size:1.8rem;
+    padding: 8px 0;
 }
+
+/* ----------- Admin show data page ------------ */
+
 table{
     border-collapse: collapse;
     background-color: #fff;
@@ -29,15 +33,18 @@ table{
 }
 th,td{
     border: 1px solid #dfdede;
-    padding: 8px 30px;
+    padding: 8px 25px;
+    justify-content: center;
     text-align: center;
+    align-items: center;
     color: grey;
 }
 th{
     text-transform: uppercase;
     font-weight: 900;
 }
-td{ font-size: 13px; }
+td{ font-size: 1.2rem; }
+
 .email-style{
     font-size: 14px;
     color: grey;
@@ -52,10 +59,32 @@ td{ font-size: 13px; }
 .post-class{
     text-transform: uppercase;
 }
+/* ----------- icons ------------ */
 .fa{ font-size: 18px; }
 .fa-edit{ color: #63c76a;}
 .fa-trash{ color: #ff0000;}
 
+/* ----------- pagination buttons ------------ */
+.page-buttons .pagination {
+    position: absolute;
+    align-items: center;            
+    /* padding: 0 2%; */
+} 
+
+/* .pagination {
+    position: absolute;
+    bottom: 11%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    width: 50%;
+    margin-left: 20%;
+}    */
+.pagination .btnPage:hover:not(.active) {   
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+}
 
 .btnPage, .btnMainpage{
     border: none;
@@ -63,14 +92,11 @@ td{ font-size: 13px; }
     background: #f8f9fa;
     cursor: pointer;
 }
-.pagination .btnPage:hover:not(.active) {   
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
-}  
 
 .main-page .btnMainpage:hover:not(.active) {   
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
 }  
-/* ----------- insert data page ------------ */
+/* ----------- application page ------------ */
 .register a{
     text-decoration: none;
     display: flex;
@@ -98,6 +124,9 @@ td{ font-size: 13px; }
     color: #383d41;
     margin: auto;
     cursor: pointer;
+}
+.register-left a:hover:not(.active) {   
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
 }
 .register-right{
     max-width: 100%;
@@ -156,6 +185,10 @@ td{ font-size: 13px; }
 .register .nav-tabs .nav-link:hover{
     border: none;
 }
+.register .btnRegister:hover:not(.active),
+.register .btnUpdate:hover:not(.active) {   
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+}  
 .register .nav-tabs .nav-link.active{
     width: 100px;
     color: #0062cc;
@@ -169,6 +202,13 @@ td{ font-size: 13px; }
     text-align: center;
     margin-top: 5%;
     color: #495057;
+}
+.register-left img{
+    width: 100%; 
+    size: 100px;
+    margin-top: 4%;
+    -webkit-animation: mover 2s infinite alternate;
+    animation: mover 1s infinite alternate;
 }
 ::placeholder{
     font-size: 14px;
@@ -197,10 +237,3 @@ td{ font-size: 13px; }
     color: rgb(25, 184, 94);
 }
 
-.register-left img{
-    width: 100%; 
-    size: 100px;
-    margin-top: 4%;
-    -webkit-animation: mover 2s infinite alternate;
-    animation: mover 1s infinite alternate;
-}

@@ -1,0 +1,25 @@
+
+**Database Name: project**
+
+**Recommended PHP Version 5.0.2 and 7.3.21**
+
+**MySQL Version 5.7.31**
+
+**Admin Login Details**
+
+username: admin
+Password: password
+
+**User Login Details**
+
+email: demo@user.com
+Password: demo
+
+email: test@user.com
+Password: test
+
+email: dummy@user.com
+Password: dummy
+
+email: demo@test.com
+Password: demo

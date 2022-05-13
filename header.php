@@ -19,7 +19,11 @@ include('admin/dbcon.php');
         background: linear-gradient(to right, #68ddfa 0%,  #55c0db 0%, #e43df3 100%);
     }
     nav {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        align-items: center;
+    }
+    nav a{
+      padding-left: 2%;
     }
 </style>
 <body>
@@ -43,9 +47,9 @@ include('admin/dbcon.php');
     </ul>
     <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
         <span class="navbar-text text-white my-2 my-lg-0">
-            Welcome <strong> <?php echo $_SESSION['username']; ?> </strong>
+            Welcome&nbsp; <strong> <?php echo $_SESSION['username']; ?> </strong>
         </span>
-      <li class="nav-item px-3">
+      <li class="nav-item px-3 py-1">
         <button class="btn btn-outline-danger" type="submit"><a style="color: #fff; text-decoration: none;" href="logout.php">Logout</a></button>
       </li>
     </ul>

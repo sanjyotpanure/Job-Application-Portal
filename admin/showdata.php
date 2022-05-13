@@ -8,7 +8,7 @@
         $page = 1;
     }
 
-    $records_per_page = 9;
+    $records_per_page = 8;
     $start_from = ($page-1)*$records_per_page;
 
     $pquery = " select * from jobregistration limit $start_from, $records_per_page ";
@@ -22,16 +22,19 @@
     <?php include 'header.php' ?>
     <?php include '../links.php' ?>
     <style>
-        .nav-buttons{
+        .container{
+            max-width: 90%;
+        }
+        .page-buttons{
             position: relative;
             display: flex;
             flex-direction: row;
             align-items: center;
-            margin-top: 5%;
+            margin-top: 3%;
             margin-bottom: 2%;
             width: 100%;
         }
-        .nav-buttons a{
+        .page-buttons a{
             font-weight: bold;
             color: #383d41;
             padding: 8px 16px;
@@ -58,11 +61,11 @@
                     <table>
                         <thead>
                             <th>ID</th>
-                            <th>Name</th>
+                            <th>UserName</th>
                             <th>Phone</th>
                             <th>Email</th>
                             <th>Degree</th>
-                            <th>Refer</th>
+                            <th>Referer</th>
                             <th>Language</th>
                             <th>CV</th>
                             <th colspan="2">Operations</th>
@@ -80,7 +83,7 @@
                             <td><?php echo $result['degree']; ?></td>
                             <td><?php echo $result['refer']; ?></td>
                             <td><?php echo $result['planguage']; ?></td>
-                            <td><a href="./view_cv.php?id=<?php echo $result['id']; ?>" title="View CV" name="viewCV">View CV</a></td>
+                            <td><a href="./view_cv.php?id=<?php echo $result['id']; ?>" title="View CV" name="viewCV"><input type="submit" name="viewCV" class="btn btn-primary btn-sm" value="View" /></a></td>
                             <td><a href="update_application.php?id=<?php echo $result['id']; ?>" data-toggle="tooltip" 
                                 data-placement="left" title="Edit"><i class="fa fa-edit"></i></a></td>
                             <td><a href="delete_application.php?id=<?php echo $result['id']; ?>" data-toggle="tooltip" 
@@ -94,7 +97,7 @@
                 </div>
             </div>
         </div>
-        <div class="nav-buttons">
+        <div class="page-buttons">
             <div class="main-page">
                 <a href="add_details.php" class="btnMainpage">Add More Records</a>
             </div>

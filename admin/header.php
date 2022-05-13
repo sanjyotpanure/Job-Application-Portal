@@ -13,6 +13,10 @@
     }
     nav {
         font-size: 1.1rem;
+        align-items: center;
+    }
+    nav a{
+      padding-left: 3%;
     }
 </style>
 <body>
@@ -35,9 +39,12 @@
       </li>
     </ul>
     <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+      <li class="nav-item">
         <span class="navbar-text text-white my-2 my-lg-0" style="font-size: 1.2rem;">
-            Welcome <strong> Admin </strong>
+            Welcome&nbsp; <strong> Admin </strong>
         </span>
+      </li>
+        
       <li class="nav-item px-3 py-1">
         <button class="btn btn-outline-danger" type="submit"><a style="color: #fff; text-decoration: none;" href="logout.php">Logout</a></button>
       </li>

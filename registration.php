@@ -80,7 +80,7 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fa fa-user"></i></span>
                     </div>
-                    <input name="username" type="text" placeholder="Enter Full Name" class="form-control" required>
+                    <input name="username" type="text" maxlength="50" placeholder="Enter Full Name" class="form-control" required>
                 </div>
                 <div class="form-group input-group">
                     <div class="input-group-prepend">
@@ -92,7 +92,7 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fa fa-phone"></i></span>
                     </div>
-                    <input name="phone" type="text" placeholder="Phone Number" class="form-control" required>
+                    <input name="phone" type="text" maxlength="10" placeholder="Phone Number" class="form-control" required>
                 </div>
                 <div class="form-group input-group">
                     <div class="input-group-prepend">

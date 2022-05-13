@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-# Job-Application-Portal
+# Job-Application-Portal 👨‍💻
 Created a dynamic Job Application Portal using PHP and MySQL. The purpose of this project is to understand basic concepts of MySQL database operations using PHP.
 The website is interactive built using HTML, CSS, and BootStrap. Minimal JavaScript is used to perform on-page validations. <br>
 The user has first to register his account. After login, he can submit his application wherein he has to provide his details such as name, email address, phone number, qualification, programming languages he knows and uploads his cv.
@@ -18,40 +18,44 @@ The user has first to register his account. After login, he can submit his appli
 
 ## Screenshots
 <div align="center">
-    <img src="https://github.com/sanjyotpanure/" width=800 alt="Screenshot" />
+    <img src="https://github.com/sanjyotpanure/Job-Application-Portal/blob/master/images/Screenshot-HomePage.PNG" width=800 alt="Screenshot" />
 </div>
+<div align="center">
+    <img src="https://github.com/sanjyotpanure/Job-Application-Portal/blob/master/images/Screenshot-UsersListPage.PNG" width=800 alt="Screenshot" />
+</div>
+
 <hr>
 
-**Steps to start project:**
+**📝 Steps to start project:**
 
 1. Download the project.
 2. Extract files and copy extracted file in your C://xampp/htdocs folder or C://wamp64/www/ folder in case of wamp server.
-3. Now your folder looks like this: - 
-    C://xampp/htdocs/Job-Applicationo-Portal/...</br>
-                                                              /admin</br>
-                                                              /css</br>
-                                                              /files</br>
-                                                              /js</br>
-                                                              /images</br>
-                                                              /application.php</br>
-                                                              /db.sql</br>
-                                                              /dbcon.php</br>
-                                                              /header.php</br>
-                                                              /index.php</br>
-                                                              /links.php</br>
-                                                              /login.php</br>
-                                                              /logout.php</br>
-                                                              /my_application.php</br>
-                                                              /profile.php</br>
-                                                              /registration.php</br>
-                                                             
+3. Now your folder looks like this: - 📁 C://xampp/htdocs/Job-Applicationo-Portal/...                                     
 4. Start wamp server or xampp server.
 5. Now create new database in phpmyadmin.
 6. Open **db.sql** copy all contain and paste it on sql panel of your database. </br>
 7. Change database username and password, if you have changed or keep as it is in **admin/dbcon.php**
-8. Now your project is ready to run
-    open this link on your browser http://localhost/Job-Application-Portal/
+8. Now your project is ready to run, open http://localhost/ on your browser and run your project.
     
+**Admin Login Details**
+
+username: admin
+Password: password
+
+**User Login Details**
+
+1. email: demo@user.com
+   Password: demo
+
+2. email: test@user.com
+   Password: test
+
+3. email: dummy@user.com
+   Password: dummy
+
+4. email: demo@test.com
+   Password: demo
+
 ## Want to Contribute 💡 :
 
 
@@ -60,25 +64,31 @@ The user has first to register his account. After login, he can submit his appli
 **2.** 👯 Clone this repository.
 
 ```terminal
-git clone https://github.com/sanjyotpanure/Job-Application-Portal
+  git clone https://github.com/sanjyotpanure/Job-Application-Portal
 ```
 
-**3.** 🔨 Build you Code, Track ✔️ & Commit your changes.
+**3.** 🔁 Create a new branch.
+
+```terminal
+git checkout -b <your_branch_name>
+```
+
+**4.** 🔨 Build you Code, Track ✔️ & Commit your changes.
 
 ```terminal
   git add .
   git commit -m "<your_commit_message>"
 ```
 
-**4.** Push your local branch to the remote repository.
+**5.** Push your local branch to the remote repository.
 
 ```terminal
-git push -u origin <your_branch_name>
+  git push -u origin <your_branch_name>
 ```
 
-**5.** 🔃 Create a Pull Request! 
+**6.** 🔃 Create a Pull Request! 
 
-**Congratulations!** 🥳 You've made your Pull Request to [Job-Application-Portal](https://github.com/sanjyotpanure/Job-Application-Portal) Repo.
+**Congratulations!** 🎊 You've made your Pull Request to [Job-Application-Portal](https://github.com/sanjyotpanure/Job-Application-Portal) Repo.
 
 <br>
 
