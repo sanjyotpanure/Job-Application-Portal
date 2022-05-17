@@ -83,7 +83,7 @@
                             <td><?php echo $result['degree']; ?></td>
                             <td><?php echo $result['refer']; ?></td>
                             <td><?php echo $result['planguage']; ?></td>
-                            <td><a href="./view_cv.php?id=<?php echo $result['id']; ?>" title="View CV" name="viewCV"><input type="submit" name="viewCV" class="btn btn-primary btn-sm" value="View" /></a></td>
+                            <td><a href="./view_cv.php?id=<?php echo $result['id']; ?>" target="_blank" title="View CV" name="viewCV"><input type="submit" name="viewCV" class="btn btn-primary btn-sm" value="View" /></a></td>
                             <td><a href="update_application.php?id=<?php echo $result['id']; ?>" data-toggle="tooltip" 
                                 data-placement="left" title="Edit"><i class="fa fa-edit"></i></a></td>
                             <td><a href="delete_application.php?id=<?php echo $result['id']; ?>" data-toggle="tooltip" 
