@@ -1,7 +1,7 @@
 <div id="top"></div>
 
-# Job-Application-Portal 👨‍💻
-Created a dynamic Job Application Portal using PHP and MySQL. The purpose of this project is to understand basic concepts of MySQL database operations using PHP.
+# HireMe Job-Application-Portal 👨‍💻
+HireMe is a Job Application Portal built using PHP and MySQL. The purpose of this project is to understand basic concepts of MySQL database operations using PHP.
 The website is interactive built using HTML, CSS, and BootStrap. Minimal JavaScript is used to perform on-page validations. <br>
 The user has first to register his account. After login, he can submit his application wherein he has to provide his details such as name, email address, phone number, qualification, programming languages he knows and uploads his cv.
 
